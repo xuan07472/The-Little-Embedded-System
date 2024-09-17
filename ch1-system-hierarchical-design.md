@@ -157,7 +157,7 @@ int main(int argc,char**argv)
 
 随着系统功能进一步复杂，输入设备会有各种各样，输出设备与模式也会有各种各样的适配，为了控制系统的复杂度，会进一步进行分层，整体的进化流程就如图1所示。
 
-![](/assets/EmbeddedSystem_S1_P0.png)图1.模块与分层进化图
+![](./assets/EmbeddedSystem_S1_P0.png)图1.模块与分层进化图
 
 其实说到底，最初其分成几个函数，到后面的模块化，再到最后的分层设计，都是在简化系统的复杂度，做到局部可控，这样才能hold住全场，让我们同一时刻只关注有限的信息量，毕竟都是人类，谁能一下子接受那么多code，更何况是凌乱的呢。善待code，善待自己，请从模块和分层开始。其实分层不是绝对的完美，所有的分层都会带来效率的降低，比如额外增加的函数调用时间损耗，但是为了可读性和可维护性，牺牲一点效率又能怎么样呢。不过千万不要过度分层，那是在装逼，不是在设计。
 
@@ -171,7 +171,7 @@ int main(int argc,char**argv)
 
 这三层划分，在一般的项目中正好对应四类工程师，控制与图像层对应控制与算法工程师，嵌入式平台层对应嵌入式软件工程师，硬件与机械层，对应嵌入式硬件工程师和机械设计工程师。如果要想实现一个完备的嵌入式系统产品，需要凑齐这四类人才才能够有备无患。
 
-![](/assets/EmbeddedSystem_S1_P1.png)
+![](./assets/EmbeddedSystem_S1_P1.png)
 
 图2.整体系统模块结构图
 
@@ -184,7 +184,7 @@ int main(int argc,char**argv)
 * imType：自定义数据类型
 * imCar：与Matlab的接口模块，用来快速批量验证算法
 
-![](/assets/EmbeddedSystem_S1_P2.png)
+![](./assets/EmbeddedSystem_S1_P2.png)
 
 图3.图像处理模块图
 
@@ -201,7 +201,7 @@ Control子模块介绍：
 * EIT\_SpeedL：左轮速度控制器
 * EIT\_SpeedR：右轮速度控制器
 
-![](/assets/EmbeddedSystem_S1_P3.png)
+![](./assets/EmbeddedSystem_S1_P3.png)
 
 图4.控制算法模块图
 
@@ -218,7 +218,7 @@ Control子模块介绍：
 * Chip：Vcan山外实现的 K60的部件库
 * CMSIS：CMSIS支持库
 
-![](/assets/EmbeddedSystem_S1_P4.png)
+![](./assets/EmbeddedSystem_S1_P4.png)
 
 图5.嵌入式平台模块结构图
 
@@ -226,7 +226,7 @@ Control子模块介绍：
 
 硬件采用山外的K60核心板，其他部分，控制核心板和驱动电源板都是自制。模块结构如图6所示，其中主要的是Power，Camera，Motor，Sensor，LCD和Key模块图。
 
-![](/assets/EmbeddedSystem_S1_P5.png)图6.系统硬件结构图
+![](./assets/EmbeddedSystem_S1_P5.png)图6.系统硬件结构图
 
 机械部分在ch2再做介绍。
 

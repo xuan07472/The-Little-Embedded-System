@@ -118,7 +118,7 @@ void DataLog_Print(void)
 343 178 2 1 2 0
 ```
 
-![](/assets/EmbeddedSystem_S5_P11.png)
+![](./assets/EmbeddedSystem_S5_P11.png)
 
 图1.测试数据Matlab图
 
